@@ -4,24 +4,24 @@ import { TypingAnimation } from "./typing-animation";
 import { ScrollAnimation } from "./scroll-animation";
 
 const aboutMeCode = `
-const maitreemistry = {
-    location: "Valsad, Gujarat, India",
-    education: "B.Tech Computer Engineering @ Pandit Deendayal Energy University (2023-2027)",
-    minor: "Internet of Things (IoT)",
-    currentFocus: ["Web Development", "Machine Learning", "IoT"],
-    achievements: [
-        "ISC School Topper 2023 🏆",
-        "Co-Author of 'Words of the Silent Souls' (Published: October 2024) 📖",
-        "JPMorganChase Code for Good Participant, Mumbai 2025 💼"
-        "Among Top 10 winning teams in ByteVerse Hackathon 2025 – NIT Patna"
-    ],
-    activities: [
-        "Attended technical workshops & completed online courses",
-        "Participated in hackathons",
-        "ACM-PDEU, GDG-PDEU, CSI-PDEU, SnT-PDEU"
-    ],
-    funfact: "I turn coco and tea into code and thoughts into poetry! ☕️✍️"
-};
+  const maitreemistry = {
+      location: "Valsad, Gujarat, India",
+      education: "B.Tech Computer Engineering @ Pandit Deendayal Energy University (2023-2027)",
+      minor: "Internet of Things (IoT)",
+      currentFocus: ["Web Development", "Machine Learning", "IoT"],
+      achievements: [
+          "ISC School Topper 2023 🏆",
+          "Co-Author of 'Words of the Silent Souls' (Published: October 2024) 📖",
+          "JPMorganChase Code for Good Participant, Mumbai 2025 💼"
+          "Among Top 10 winning teams in ByteVerse Hackathon 2025 – NIT Patna"
+      ],
+      activities: [
+          "Attended technical workshops & completed online courses",
+          "Participated in hackathons",
+          "ACM-PDEU, GDG-PDEU, CSI-PDEU, SnT-PDEU"
+      ],
+      funfact: "I turn coco and tea into code and thoughts into poetry! ☕️✍️"
+  };
 `;
 
 export function AboutSection() {
