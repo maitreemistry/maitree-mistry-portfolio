@@ -12,13 +12,14 @@ const aboutMeCode = `
       achievements: [
           "ISC School Topper 2023 🏆",
           "Co-Author of 'Words of the Silent Souls' (Published: October 2024) 📖",
-          "JPMorganChase Code for Good Participant, Mumbai 2025 💼"
+          "JPMorganChase Code for Good Participant, Mumbai 2025 💼",
           "Among Top 10 winning teams in ByteVerse Hackathon 2025 – NIT Patna"
       ],
       activities: [
           "Attended technical workshops & completed online courses",
           "Participated in hackathons",
-          "ACM-PDEU, GDG-PDEU, CSI-PDEU, SnT-PDEU"
+          "Chairperson at ACM-PDEU, Web Development Head at Encode-PDEU (Computer Science Club)",
+          "Volunteering at GDG-PDEU, CSI-PDEU, SnT-PDEU"
       ],
       funfact: "I turn coco and tea into code and thoughts into poetry! ☕️✍️"
   };
