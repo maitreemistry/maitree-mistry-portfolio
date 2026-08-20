@@ -8,6 +8,8 @@ import { ConnectSection } from '@/components/connect-section';
 import { Footer } from '@/components/footer';
 import { FocusMindmap } from '@/components/focus-mindmap';
 import { PublicationsSection } from '@/components/publications-section';
+import { AchievementsSection } from '@/components/achievements-section';
+import { EducationSection } from '@/components/education-section';
 
 export default function Home() {
   return (
@@ -20,7 +22,9 @@ export default function Home() {
         <TechArsenal />
         <FocusMindmap />
         <ProjectsSection />
+        <AchievementsSection />
         <PublicationsSection />
+        <EducationSection />
         <ConnectSection />
       </main>
       <Footer />

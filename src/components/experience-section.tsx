@@ -3,16 +3,35 @@ import { ScrollAnimation } from './scroll-animation';
 
 const experienceData = [
   {
-    role: '🔬 Machine Learning Intern',
-    company: 'BosLeo Technology Private Limited',
-    period: 'June 2025 - July 2025',
-    description: '• Worked on ML algorithms and data analysis\n• Developed predictive models and RAG-based chatbot',
+    role: 'Software Engineer Program Intern',
+    company: 'JPMorgan Chase & Co.',
+    location: 'Mumbai, Maharashtra',
+    period: 'May 2026 - July 2026',
+    description: [
+      'Contributed to the Commercial & Investment Banking - Prime Finance division by developing enterprise backend services using Java, Spring Boot, and SQL, while creating architecture diagrams, workflow visualizations, and technical documentation to support system design and cross-team collaboration.',
+      'Developed, tested, and delivered production-ready features across the complete software development lifecycle, leveraging Jenkins-based CI/CD pipelines to ensure reliable deployments and release readiness.',
+      'Designed and deployed an Execution Plan Tracker on AWS using Express.js and JavaScript, improving task visibility and workflow management for 30+ employees across 1,000+ tasks and initiatives.'
+    ],
   },
   {
-    role: '💻 Web Development Intern',
-    company: 'Atul Limited',
+    role: 'AI/ML Intern',
+    company: 'BosLeo Technology Pvt. Ltd.',
+    location: 'Valsad, Gujarat',
+    period: 'June 2025 - July 2025',
+    description: [
+      'Built a fully offline RAG-powered QA system over 500+ documents, eliminating external API dependency while ensuring secure, privacy-preserving information retrieval.',
+      'Engineered an end-to-end retrieval pipeline using LangChain, FAISS, and Ollama, optimizing chunking, indexing, logging, and observability for efficient retrieval and debugging.'
+    ],
+  },
+  {
+    role: 'Web Development Intern',
+    company: 'Atul Ltd.',
+    location: 'Atul, Gujarat',
     period: 'June 2024 - July 2024',
-    description: '• Built "Complimentary Gift Distribution" web application\n• Collaborated with development team',
+    description: [
+      'Built a Complimentary Gift Distribution platform handling high-volume allocation requests, automating workflows and reducing manual intervention.',
+      'Engineered a scalable MVC system using MySQL, CodeIgniter, AJAX, and jQuery, optimizing database queries and enabling real-time dashboards with sub-second response times.'
+    ],
   },
 ];
 
@@ -38,10 +57,12 @@ export function ExperienceSection() {
                 <div className="w-[calc(50%-2.5rem)]">
                   <ScrollAnimation animation={index % 2 === 0 ? 'slide-in-from-right' : 'slide-in-from-left'}>
                     <div className={`p-6 rounded-lg bg-card transition-all duration-300 hover:shadow-[0_0_20px_hsl(var(--primary)/0.3)] hover:-translate-y-1 ${index % 2 === 0 ? 'text-left' : 'text-right'}`}>
-                      <p className="text-sm text-muted-foreground">{item.period}</p>
+                      <p className="text-sm text-muted-foreground">{item.period} · {item.location}</p>
                       <h3 className="text-xl font-bold text-primary">{item.role}</h3>
                       <p className="font-semibold">{item.company}</p>
-                      <p className="mt-2 text-sm text-card-foreground/80 whitespace-pre-line">{item.description}</p>
+                      <ul className="mt-3 space-y-2 text-left text-sm text-card-foreground/80">
+                        {item.description.map((point) => <li key={point} className="list-disc ml-4">{point}</li>)}
+                      </ul>
                     </div>
                   </ScrollAnimation>
                 </div>

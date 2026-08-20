@@ -4,8 +4,15 @@ import { ThemeProvider } from '@/components/theme-provider';
 import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
-  title: "Maitree's Portfolio",
-  description: "Portfolio of Maitree Mistry, a Computer Engineering student.",
+  title: 'Maitree Mistry | Software Engineer | AI/ML',
+  description: 'Portfolio of Maitree Mistry, a Computer Engineering student and Software Engineer with experience in backend development, AI/ML, cloud technologies, and full-stack development.',
+  openGraph: {
+    title: 'Maitree Mistry | Software Engineer | AI/ML',
+    description: 'Portfolio of Maitree Mistry, a Computer Engineering student and Software Engineer with experience in backend development, AI/ML, cloud technologies, and full-stack development.',
+    url: 'https://maitree-mistry-portfolio.vercel.app/',
+    siteName: 'Maitree Mistry Portfolio',
+    type: 'website',
+  },
 };
 
 export default function RootLayout({

@@ -4,15 +4,12 @@ import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { ScrollAnimation } from './scroll-animation';
 import { RoleTypingAnimation } from './role-typing-animation';
-import { FileText } from 'lucide-react';
 
 export function HeroSection() {
   const roles = [
-    "Computer Engineering Student",
-    "Web Development Enthusiast",
-    "Minor in IoT",
-    "Poet",
-    "Always Learning Something New!"
+    "Software Engineer",
+    "AI/ML Enthusiast",
+    "Computer Engineering Student"
   ];
   
   return (
@@ -42,18 +39,17 @@ export function HeroSection() {
               </div>
             </ScrollAnimation>
             <ScrollAnimation animation="fade-in-up" delay={400}>
+              <p className="max-w-2xl text-base leading-7 text-muted-foreground md:text-lg">
+                I build reliable software across backend development, AI/ML, cloud technologies, and modern web applications, grounded in strong computer science fundamentals.
+              </p>
+            </ScrollAnimation>
+            <ScrollAnimation animation="fade-in-up" delay={500}>
               <div className="flex flex-col gap-2 min-[400px]:flex-row">
                 <Button asChild size="lg">
                   <Link href="#projects">View My Work</Link>
                 </Button>
                 <Button asChild variant="outline" size="lg">
                   <Link href="#connect">Get in Touch</Link>
-                </Button>
-                <Button asChild variant="outline" size="lg">
-                  <Link href="/Maitree_Mistry_Resume.pdf" target="_blank" rel="noopener noreferrer">
-                    <FileText className="mr-2 h-5 w-5" />
-                    View Resume
-                  </Link>
                 </Button>
               </div>
             </ScrollAnimation>

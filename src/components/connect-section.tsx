@@ -6,7 +6,7 @@ import { ScrollAnimation } from './scroll-animation';
 const socialLinks = [
   { name: 'GitHub', icon: Github, url: 'https://github.com/maitreemistry' },
   { name: 'LinkedIn', icon: Linkedin, url: 'https://www.linkedin.com/in/maitree-mistry-1927392b8' },
-  { name: 'Email', icon: Mail, url: '' },
+  { name: 'Email', icon: Mail, url: 'mailto:maitreemistry2005@gmail.com' },
 ];
 
 export function ConnectSection() {

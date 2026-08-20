@@ -3,7 +3,6 @@
 import React from 'react';
 import Link from 'next/link';
 import { ThemeToggle } from './theme-toggle';
-import { Button } from './ui/button';
 import { Code2 } from 'lucide-react';
 
 export function Header() {
@@ -21,10 +20,13 @@ export function Header() {
     { href: '#about', label: 'About' },
     { href: '#experience', label: 'Experience' },
     { href: '#tech-arsenal', label: 'Skills' },
-    { href: '#focus-mindmap', label: 'Focus' },
+    { href: '#expertise', label: 'Expertise' },
     { href: '#projects', label: 'Projects' },
+    { href: '#achievements', label: 'Achievements' },
+    { href: '#leadership', label: 'Leadership' },
     { href: '#publications', label: 'Publications' },
-    { href: '#connect', label: 'Connect' },
+    { href: '#education', label: 'Education' },
+    { href: '#connect', label: 'Contact' },
   ];
 
   return (
@@ -34,7 +36,7 @@ export function Header() {
           <Code2 className="h-6 w-6 text-primary" />
           <span className='font-headline'>Maitree Mistry</span>
         </Link>
-        <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
+        <nav className="flex max-w-[45vw] items-center gap-3 overflow-x-auto whitespace-nowrap text-[11px] font-medium lg:max-w-none lg:gap-4 lg:overflow-visible lg:text-xs">
           {navLinks.map((link) => (
             <Link key={link.href} href={link.href} className="text-foreground/80 transition-colors hover:text-foreground">
               {link.label}

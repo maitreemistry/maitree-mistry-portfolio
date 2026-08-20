@@ -6,7 +6,7 @@ const publications = [
   {
     title: 'Machine Learning for Water Quality Prediction: A Survey of Techniques, Challenges, and Future Directions',
     authors: 'Maitree Mistry, Himanshu Gajera',
-    conference: 'International Conference on Advances in Water Treatment and Management (ICAWTM-25)(under review)',
+    conference: 'Accepted at ICAWTM-25 · International Conference on Advances in Water Treatment and Management',
   },
 ];
 

@@ -6,22 +6,11 @@ import { ScrollAnimation } from "./scroll-animation";
 const aboutMeCode = `
   const maitreemistry = {
       location: "Valsad, Gujarat, India",
-      education: "B.Tech Computer Engineering @ Pandit Deendayal Energy University (2023-2027)",
+    education: "B.Tech in Computer Engineering @ PDEU (2023-2027)",
       minor: "Internet of Things (IoT)",
-      currentFocus: ["Web Development", "Machine Learning", "IoT"],
-      achievements: [
-          "ISC School Topper 2023 🏆",
-          "Co-Author of 'Words of the Silent Souls' (Published: October 2024) 📖",
-          "JPMorganChase Code for Good Participant, Mumbai 2025 💼",
-          "Among Top 10 winning teams in ByteVerse Hackathon 2025 – NIT Patna"
-      ],
-      activities: [
-          "Attended technical workshops & completed online courses",
-          "Participated in hackathons",
-          "Chairperson at ACM-PDEU, Web Development Head at Encode-PDEU (Computer Science Club)",
-          "Volunteering at GDG-PDEU, CSI-PDEU, SnT-PDEU"
-      ],
-      funfact: "I turn coco and tea into code and thoughts into poetry! ☕️✍️"
+    cgpa: "9.67/10",
+    focus: ["Software Engineering", "Backend", "AI/ML", "Cloud"],
+    strengths: ["Reliable systems", "Practical solutions", "Strong CS fundamentals"]
   };
 `;
 
@@ -35,7 +24,7 @@ export function AboutSection() {
             <div className="space-y-2">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl font-headline">A Little Bit About Me</h2>
               <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                I'm a blend of logic and verse, an engineer with a poet's heart.
+                I'm a Computer Engineering student at Pandit Deendayal Energy University with hands-on experience building enterprise software, AI-powered systems, and full-stack applications. I've worked across backend engineering, cloud technologies, AI/ML, databases, and modern web development, and I enjoy turning complex problems into reliable, practical solutions.
               </p>
             </div>
           </div>
